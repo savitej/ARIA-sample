@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <title>ARIA application</title>
+</head>
+<body>
+    <ul class="skip-links">
+        <li><a href="#nav">Navigation</a></li>
+        <li><a href="#main">Main content</a></li>
+      </ul>
+      
+    <div class="container">
+        <header role="banner" id="top">
+
+
+            <strong>ARIA Sample</strong>
+            <nav>           
+            <ul>
+                <li><a herf=""> Link1</a></li>
+                <li><a herf=""> Link2</a></li>
+                <li><a herf=""> Link3</a></li>
+
+            </ul>
+        </nav>
+        </header>
+    </div>
+    <main role="main" id="main">
+    <div class="container">
+        <h1>This is ARIA Sample</h1>
+        <p class="subtext"This is for the testing purposes></p>
+        <h2>Read more about this</h2>
+
+            <ul>
+                <li>
+                    <button aria-expanded="false"
+                    id="btn1"
+                    aria-controls="sect1"
+                    class="accordian">
+                    <span>Demo1</span></button>
+                    <p id="sect1" role="region" aria-labelledby="btn1">paragraph1</p></li>
+                    <li>
+                        <button><span>Demo2</span></button>
+                        <p>paragraph2</p></li>
+                        <li>
+                            <button><span>Demo3</span></button>
+                            <p>paragraph3</p></li>
+                        
+                    
+            </ul>
+    </div>
+</main>
+<aside role="complementary">
+    <ul>
+        <li><a href="">Step1</a></li>
+        <li><a href="">Step2</a></li>
+      </ul>
+    
+</aside>
+<dl class="visually-hidden" id="graph-info">
+    <dt>XXX</dt>
+    <dd>XXX XXX </dd>
+    <dt>XXX</dt>
+    <dd>XXXXXX</dd>
+  </dl>
+  
+<footer role="contentinfo">
+    <p>End of the Site <a href="">Top</a></p>
+  </footer>
+  
+    </body>
+</html>
