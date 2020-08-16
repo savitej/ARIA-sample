@@ -2,18 +2,12 @@ body {
   margin: 0;
 }
 
-/*
- * It's okay to remove the `outline` from `:hover` and `:active` but never `:focus`
- */
 a:hover,
 a:active {
   outline: none;
 }
 
-/*
- * The `:focus` state is extremely important for keyboard users.
- * It helps them see which link is currently selected.
- */
+
 a:focus {
   outline: 3px solid #000;
 }
